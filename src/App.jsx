@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import work1Image from "../dist/assets/images/work1.jpeg";
-import work11Image from "../dist/assets/images/work11.jpeg";
-import work6image from "../dist/assets/images/work6.jpeg";
-import work10image from "../dist/assets/images/work10.jpeg";
-import work7image from "../dist/assets/images/work7.jpeg";
-import solarpanel from "../dist/assets/images/solarpanel.jpg";
-import profile from "../dist/assets/images/profile.jpeg";
+import work1Image from "./assets/images/work1.jpeg";
+import work11Image from "./assets/images/work11.jpeg";
+import work6image from "./assets/images/work6.jpeg";
+import work10image from "./assets/images/work10.jpeg";
+import work7image from "./assets/images/work7.jpeg";
+import solarpanel from "./assets/images/solarpanel.jpg";
+import profile from "./assets/images/profile.jpeg";
 
 // Custom hook for scroll reveal
 function useScrollReveal() {
