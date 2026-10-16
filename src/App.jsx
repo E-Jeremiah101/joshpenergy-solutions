@@ -8,6 +8,10 @@ import workvid2 from "./assets/images/work-interior.mov";
 import workvid3 from "./assets/images/work-vid3.mov";
 import workvid5 from "./assets/images/work-vid5.mp4";
 import workvid6 from "./assets/images/work-vid6.mp4";
+import workvidbg3 from "./assets/images/work-bg3.png";
+import workvidbg5 from "./assets/images/work-bg5.png";
+import workvidbg6 from "./assets/images/work-bg6.png";
+import workvidint from "./assets/images/work-int.png";
 import profile from "./assets/images/profile.jpeg";
 
 // --- Scroll Reveal Hook ---
@@ -72,6 +76,7 @@ const projects = [
   {
     title: "Solar and Lithium Battery Installation",
     type: "SOLAR SYSTEM INSTALLATION",
+    poster: workvidbg6,
     video: workvid6,
     alt: "Professionally installed solar and lithium battery system",
     description:
@@ -99,7 +104,7 @@ const projects = [
     title: "Solar Panel Installation",
     type: "SOLAR PANEL INSTALLATION",
     video: workvid5,
-    image: work11Image,
+    poster: workvidbg5,
     alt: "Solar panels professionally installed on a new building",
     description:
       "A showcase of professionally installed solar panels, highlighting the panel arrangement, installation quality, and attention to detail for efficient solar energy generation.",
@@ -113,7 +118,7 @@ const projects = [
     title: "Solar Panel Mounting",
     type: "ROOFTOP SOLAR INSTALLATION",
     video: workvid3,
-    image: work11Image,
+    poster: workvidbg3,
     alt: "Solar panels installed on a building roof",
     description:
       "A carefully executed solar installation featuring well-positioned panels and secure fittings to support efficient sunlight capture and reliable energy generation.",
@@ -140,7 +145,7 @@ const projects = [
     title: "Interior Lighting Design",
     type: "INTERIOR LIGHTING",
     video: workvid2,
-    image: work10image,
+    poster: workvidint,
     alt: "Beautiful interior lighting enhancing the appearance of a home",
     description:
       "A beautiful interior lighting design that adds elegance to the home, creates a warm and welcoming atmosphere, and enhances the character of each space.",
@@ -291,7 +296,7 @@ function ProjectModal({ project, onClose }) {
           <video
             className="modal-video"
             src={project.video}
-            poster={project.image}
+            poster={project.poster}
             controls
             autoPlay
             playsInline
@@ -517,9 +522,9 @@ function App() {
                     >
                       {project.video ? (
                         <>
-                          {/* Video thumbnail - shows first frame automatically */}
                           <video
                             src={project.video}
+                            poster={project.poster}
                             preload="metadata"
                             muted
                             playsInline
